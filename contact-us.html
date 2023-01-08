@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> contact-us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;1,400;1,600&family=Oswald&family=Roboto:wght@100;300;400;500&family=Yantramanav:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-chevron-up" style="color: white;"></i>
+    </button>
+    <!--Start navbar-->
+    <nav>
+        <ul>
+          <li><div class="navbar-brand" href="#"><img src="./images/wedding.png" height="50px"></div></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./about-us.html"> About us</a></li>
+          <li><a href="./contact-us.html"> Contact us</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart <span id="counter">0</span></a></li>
+        </ul>
+    </nav>
+    <!--End navbar-->
+
+    <!-- Start Contact us form  -->
+    <div class="contact">
+      <h1>Contact Us Form</h1>
+
+      <form action="" id="form-info">
+
+        <label name="username">Full Name</label><br>
+        <input id="inputname" type="text" name="username" value="" placeholder="Enter your full name" required><br>
+        <p id="nameMsg" class="errorname">Please enter your name</p>
+
+        <label name="email">Email</label><br>
+        <input id="inputemail" type="email" name="email" value="" placeholder="Enter your email" required><br>
+        <p id="emailMsg" class="emailMsg">Email is not valid</p>
+
+        <label name="password">Password</label><br>
+        <input id="inputpassword" type="password" name="password" value="" placeholder="Enter your password" required><br>
+        <p id="passwordMsg" class="passwordMsg">Please enter your password</p>
+
+       <button id="submit" class="btnsubmit" type="submit">Send</button>
+      </form>
+    </div>
+    <!-- End Contact us form -->
+
+    <div class="contact-section1">
+      <div class="cont">
+        <img src="./images/contact-2.jpg" width="400px">
+      </div>
+      <div class="cont">
+        <h2>Contact Information</h2>
+        <p>I am text block. Click edit button to change this text.<br>
+          Lorem ipsum dolor sit amet, consectetur. I am text block.<br>
+          Click edit button to change this text. Lorem ipsum dolor sit amet,<br>
+          We are the champions! We are the most amazing <br>
+          theme of all time, yeah</p><br>
+          <p>Our contact details:</p>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>  123 456 7893</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>  hello@sitename.com </a></li>
+            <li><a href="#"><i class="fa fa-location-dot"></i>  Manchester Road3, Silictown,Great Country.</a></li>
+          </ul>
+      </div>
+    </div>
+    <!--Start footer-->
+    <footer>
+      <div id="footersec" class="footer-sec">
+
+          <div class="brand">
+              <a href="#"><img src="./images/wedding.png" style="height: 50px;"></a>
+          </div>
+
+          <div class="link1">
+            <h5>About us</h5>
+            <ul>
+              <li><a href="#">Wedding Team </a></li><hr>
+              <li><a href="#"> Wedding Decoration </a></li><hr>
+              <li><a href="#">Wedding Invitations </a></li><hr>
+              <li><a href="#">Wedding planner</a></li>
+            </ul>
+          </div>
+
+          <div class="link2">
+            <h5>Office Hours</h5>
+            <ul>
+              <li><a href="#">Monday 9AM - 9PM</a></li><hr>
+              <li><a href="#">Tuesday 10AM - 9PM</a></li><hr>
+              <li><a href="#">Thursday 9AM - 10AM</a></li><hr>
+              <li><a href="#">Friday 10AM - 11AM</a></li>
+            </ul>
+          </div>
+
+          <div class="link3">
+            <h5>Contact Details</h5>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>  123 456 7893</a></li><hr style="margin-bottom: 5px;">
+                <li><a href="#"><i class="fa-solid fa-envelope"></i>  hello@sitename.com </a></li><hr>
+                <li><a href="#"><i class="fa fa-location-dot"></i>  Manchester Road3, Silictown,Great Country. </a></li><hr style="margin-bottom: 5px;">
+                <li class="social-icon">
+                    <a href="#"><span id="blue"><i class="fa-brands fa-facebook" style="color: blue;"></i></span></a>
+                    <a href="#"><span id="red"><i class="fa-brands fa-instagram" style="color: rgb(235, 54, 150);"></span></i></a>
+                    <a href="#"><span id="red"><i class="fa-brands fa-pinterest" style="color: red;"></i></span></a>
+                    <a href="#"><span id="blue"><i class="fa-brands fa-twitter" style="color: #0081C9;"></i></span></a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <!--End footer-->
+  <script src="./test.js"></script>
+</body>
+</html>

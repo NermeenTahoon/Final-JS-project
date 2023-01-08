@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;1,400;1,600&family=Oswald&family=Roboto:wght@100;300;400;500&family=Yantramanav:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa-solid fa-chevron-up" style="color: white;"></i>
+        </button>
+    <!--Start navbar-->
+    <nav class="nav">
+        <ul>
+          <li><div class="navbar-brand" href="#"><img src="./images/wedding.png" height="50px"></div></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./about-us.html"> About us</a></li>
+          <li><a href="./contact-us.html"> Contact us</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart <span id="counter">0</span></a></li>
+        </ul>
+    </nav>
+    <!--End navbar-->
+
+    <!--Start article-->
+    <article>
+      <!--Start slider-->
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./images/background 1.jpg" style="width:100%; height: 700px;">
+              <div class="text">
+                <h2>Wedding Company</h2>
+                <p>Planning a wedding? We're here for you!</p>
+                <button class="head-btn" id="btn1">Learn More</button>
+                <button class="head-btn" id="btn2">About Us</button>
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./images/background 2.jpg" style="width:100%; height: 700px;">
+              <div class="text">
+                <h2>Wedding Company</h2>
+                <p style="color: #0081C9;">Planning a wedding? We're here for you!</p>
+                <button class="head-btn" id="btn1">Learn More</button>
+                <button class="head-btn" id="btn2">About Us</button>
+              </div>
+            </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./images/invitation-2.jpg" style="width:100%;  height: 700px;">
+              <div class="text">
+                <h2 style="color: #FF7B54;">Wedding Company</h2>
+                <p>Planning a wedding? We're here for you!</p>
+                <button class="head-btn" id="btn1">Learn More</button>
+                <button class="head-btn" id="btn2">About Us</button>
+              </div>
+            </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+        </div>
+        <!--End slider-->
+
+        <!--Start section-1 about-->
+        <div id="section1-home">
+          <div>
+            <img src="./images/bride.jpg" style="width: 400px;">
+          </div>
+          <div id="about-home">
+            <p id="main-parag">The Special Day</p>
+            <h1>You will remember this day forever.</h1>
+            <p>We have been operating for over 30 years and are<br>
+              Members of The Federation of Master Builders.We work<br>
+              on projects big and small from small residential <br>
+              extensions to full house and commercial builds and <br>
+              we are registered NHBC house builders</p>
+              <button id="learn-more"> Learn More</button>
+          </div>
+        </div>
+        <!--End section-1 about-->
+
+        <!--start section-2 about-->
+        <div class="four-buttons" id="four-buttons">
+          <button class="four-btns active"id="all-btn" onclick="filterSelection('all')">Show All</button>
+          <button class="four-btns" onclick="filterSelection('Decoration')">Decoration</button>
+          <button class="four-btns" onclick="filterSelection('Cakes')">Cakes</button>
+          <button class="four-btns" onclick="filterSelection('Invitation')">Invitations</button>
+          <button class="four-btns" onclick="filterSelection('Gifts')">Gifts</button>
+        </div>
+        <!--End section-2 about-->
+
+        <!--start section-3 cards& buttons-->
+        <div id="cards">
+
+          <div class="card Decoration">
+            <img src="./images/decor-1.jpg" style="width:100%; height: 360px; ">
+            <h1>Decoration</h1>
+            <p class="price">$49.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Gifts">
+            <img src="./images/gift-2.jpg" style="width:100%; height: 360px;">
+            <h1>Wedding Gift</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Cakes">
+            <img src="./images/food-1.jpg" style="width:100%">
+            <h1>Cup Cakes</h1>
+            <p class="price">$29.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Invitation">
+            <img src="./images/invitation -6.jpg" style="width:100%; height: 360px;">
+            <h1>Invitation</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Cakes">
+            <img src="./images/food-3.jpg" style="width:100%; height: 360px;">
+            <h1>Cup Cakes</h1>
+            <p class="price">$39.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Decoration">
+            <img src="./images/decoration-3.jpg" style="width:100%; height: 360px;">
+            <h1>Decoration</h1>
+            <p class="price">$39.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Gifts">
+            <img src="./images/gift-1.jpg" style="width:100%; height: 360px;">
+            <h1>Wedding Gift</h1>
+            <p class="price">$11.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Decoration">
+            <img src="./images/decoration-1.jpg" style="width:100%; height: 360px;">
+            <h1>Decoration</h1>
+            <p class="price">$69.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Invitation">
+            <img src="./images/invitation -1.jpg" style="width:100%; height: 360px;">
+            <h1>Invitation</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Gifts">
+            <img src="./images/gifttttt.jpg" style="width:100%; height: 360px;">
+            <h1>Wedding Gift</h1>
+            <p class="price">$16.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Cakes">
+            <img src="./images/cack-love.jpg" style="width:100%; height: 360px;">
+            <h1>Cup Cakes</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+          <div class="card Invitation">
+            <img src="./images/invitation-2.jpg" style="width:100%; height: 360px;">
+            <h1>Invitation</h1>
+            <p class="price">$12.10</p>
+            <p>Some text about the jeans. Super slim and ipsum lorem jeansum denim lorem jeansum.</p>
+            <button id="cack-btn" class="addToCart">Add to Cart</button>
+          </div>
+
+        </div>
+
+      <!--End cards & buttons-->
+      <!--Star lastsection -->
+      <div  class="last-content">
+          <p id="what">What do we offer?</p>
+          <p id="remember">You will remember this day forever.</p>
+      
+          <div class="last-section">
+            <div class="offer">
+              <img src="./images/blue-1.jpg" style="width:100%; height: 450px;">
+              <p id="offer-parag">Perfect Tables</p>
+              <p class="offer-parag">Little dish description may be here.</p>
+            </div>
+
+            <div class="offer">
+              <img src="./images/lovely-moment.jpg" style="width:100%; height: 450px;">
+              <p id="offer-parag">Lovely Moment</p>
+              <p class="offer-parag">Little dish description may be here.</p>
+            </div>
+
+            <div class="offer">
+              <img src="./images/aabout.jpg" style="width:100%; height: 450px;">
+              <p id="offer-parag">Perfect Tables</p>
+              <p class="offer-parag">Little dish description may be here.</p>
+            </div>
+          </div>
+        </div>   
+
+      <!--End lastsection -->
+
+     </article>
+    <!--End article-->
+ 
+
+    <!--Start footer-->
+      <footer>
+        <div id="footersec" class="footer-sec">
+
+            <div class="brand">
+                <a href="#"><img src="./images/wedding.png" style="height: 50px;"></a>
+            </div>
+
+            <div class="link1">
+              <h5>About us</h5>
+              <ul>
+                <li><a href="#">Wedding Team </a></li><hr>
+                <li><a href="#"> Wedding Decoration </a></li><hr>
+                <li><a href="#">Wedding Invitations </a></li><hr>
+                <li><a href="#">Wedding planner</a></li>
+              </ul>
+            </div>
+
+            <div class="link2">
+              <h5>Office Hours</h5>
+              <ul>
+                <li><a href="#">Monday 9AM - 9PM</a></li><hr>
+                <li><a href="#">Tuesday 10AM - 9PM</a></li><hr>
+                <li><a href="#">Thursday 9AM - 10AM</a></li><hr>
+                <li><a href="#">Friday 10AM - 11AM</a></li>
+              </ul>
+            </div>
+
+            <div class="link3">
+              <h5>Contact Details</h5>
+              <ul>
+                  <li><a href="#"><i class="fa-solid fa-phone"></i>  123 456 7893</a></li><hr style="margin-bottom: 5px;">
+                  <li><a href="#"><i class="fa-solid fa-envelope"></i>  hello@sitename.com </a></li><hr style="margin-bottom: 5px;">
+                  <li><a href="#"><i class="fa fa-location-dot"></i>  Manchester Road3, Silictown,Great Country. </a></li><hr>
+                  <li class="social-icon">
+                      <a href="#"><span id="blue"><i class="fa-brands fa-facebook" style="color: blue;"></i></span></a>
+                      <a href="#"><span id="red"><i class="fa-brands fa-instagram" style="color: rgb(235, 54, 150);"></span></i></a>
+                      <a href="#"><span id="red"><i class="fa-brands fa-pinterest" style="color: red;"></i></span></a>
+                      <a href="#"><span id="blue"><i class="fa-brands fa-twitter" style="color: #0081C9;"></i></span></a>
+                  </li> 
+              </ul>
+            </div>
+          </div>
+      </footer>
+      <!--End footer-->
+    <script src="./main.js"></script>
+</body>
+</html>
